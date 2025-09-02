@@ -1,5 +1,11 @@
-# frozen_string_literal: true
-
+require_relative '../../lib/calculator.rb'
 describe Calculator do
-  # ...student specs...
+  it "adds two numbers" do
+    expect(Calculator.new.add(2,3)).to eq(5)
+  end
+
+  it "subtracts two numbers" do
+    expect(Calculator.new.subtract(5,4)).to eq(1)
+  end
+
 end

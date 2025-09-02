@@ -23,6 +23,7 @@ class Calculator
     validate_number(a)
     validate_number(b)
     raise ZeroDivisionError, 'divided by 0' if b == 0
+
     a.to_f / b
   end
 
@@ -35,6 +36,7 @@ class Calculator
   def sqrt(a)
     validate_number(a)
     raise ArgumentError, 'cannot take sqrt of negative number' if a < 0
+
     Math.sqrt(a)
   end
 
