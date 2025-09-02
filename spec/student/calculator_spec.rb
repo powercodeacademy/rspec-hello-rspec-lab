@@ -8,4 +8,8 @@ describe Calculator do
     expect(Calculator.new.subtract(5,4)).to eq(1)
   end
 
+  it "multiplies two numbers" do
+    expect(Calculator.new.multiply(2,2)).to eq(4)
+  end
+
 end
