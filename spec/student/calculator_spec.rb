@@ -12,4 +12,7 @@ describe Calculator do
     expect(Calculator.new.multiply(2,2)).to eq(4)
   end
 
+  it "divides two numbers" do
+    expect(Calculator.new.divide(10,5)).to eq(2)
+  end
 end
