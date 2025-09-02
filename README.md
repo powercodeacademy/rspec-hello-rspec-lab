@@ -26,13 +26,24 @@ Welcome to your first RSpec lab! In this lab, you'll write your very first specs
 
    - Write **one `it` block per Calculator method** (e.g., one for addition, one for subtraction, etc.).
    - In each `it` block, use a single expectation to test the Calculator's output.
-   - Test both expected outputs and edge cases (e.g., what happens if you divide by zero with the Calculator?).
 
 4. Run your Calculator specs using `bin/rspec`.
 
    - When you first run your specs, you may see failures (red output)—this is expected! As you write correct specs for the Calculator, you'll see passing (green) output.
 
-5. Do **not** change any files in `spec/meta/`—these are lab checker specs that verify your Calculator specs. In the test output, any spec labeled with `[LAB CHECKER]` is an official lab checker (not written by you) and is there to help you know if your specs meet the requirements.
+5. (Optional) Try testing "edge cases" for extra practice.
+
+   - **What are edge cases?**
+     Edge cases are situations that test the boundaries or unusual behavior of your code. For example, dividing by zero, adding very large numbers, or using negative numbers.
+   - You might add an extra `it` block for an edge case, such as:
+     ```ruby
+     it "returns an error or special value when dividing by zero" do
+       expect { Calculator.new.divide(5, 0) }.to raise_error(ZeroDivisionError)
+     end
+     ```
+   - Edge case tests are not required for this lab, but they're a great way to deepen your understanding of how the Calculator should behave in unusual situations.
+
+6. Do **not** change any files in `spec/meta/`—these are lab checker specs that verify your Calculator specs. In the test output, any spec labeled with `[LAB CHECKER]` is an official lab checker (not written by you) and is there to help you know if your specs meet the requirements.
 
 ## What to do
 
