@@ -16,5 +16,4 @@ describe Calculator do
   it "returns the multiplication of two numbers" do
     expect(Calculator.new.multiply(5, 2)).to eq(10)
   end
-  
 end
